@@ -5,5 +5,4 @@ if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59 hours) {
 } else {
     var romanRes = convert(hours)+ ':' + convert(minutes);
     console.log(romanRes+'\n');
-    writeASCII(romanRes);
 }
