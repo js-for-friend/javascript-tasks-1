@@ -1,33 +1,16 @@
-//var hours = process.argv[2];
-//var minutes = process.argv[3];
-
-
-var hours = prompt('Который час?', 24);
-
+var hours = process.argv[2];
+var minutes = process.argv[3];
 if (num < 0 || num > 23) {
-          alert("Введите значение в диапозоне от 0 до 23");
+         console.log("Время указано не верно. Введите значение в диапозоне от 0 до 23");
           return;
+        } else {
+                  if (hours > 0 || hours < 24) {
+                            console.log(hours);
+                  }
         }
 
-}
 
 
-var minutes = promt('Введите минуты', 59);
-while (hours > 0) || (hours < 25) {
- console.log('Время' + minutes); 
-}
-
-
-
-
-
-
-
-
-
-
-// Немного замечательного кода и магии
-// Немного изменений для pull request) 
 //На вход скрипт всегда принимает два числа через пробел:
 
 вначале часы hours (от 0 до 23),
