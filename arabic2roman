@@ -1,15 +1,15 @@
-function convert(numb) {
-    var arabArray=[1,4,5,9,10,40,50];
-    var romArray= ["I", "IV", "V", "IX", "X", "XL", "L"];
+function toRome(numb) {
+    var arabNumb=[1,4,5,9,10,40,50];
+    var romNumb= ["I", "IV", "V", "IX", "X", "XL", "L"];
     if ((!numb)||(numb == 0)) {
         return '';
     }
     var result = '';
-    var n = arabArray.length - 1;
+    var n = arabNumb.length - 1;
     while (numb >0) {
-        if (numb>=arabArray[n])  {
-            result += romArray[n];
-            numb-=arabArray[n];
+        if (numb>=arabNumb[n])  {
+            result += romNumb[n];
+            numb-=arabNumb[n];
         } else {
             n--;
         }
